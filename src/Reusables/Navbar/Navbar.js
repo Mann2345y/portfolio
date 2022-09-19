@@ -39,18 +39,18 @@ const Navbar = () => {
         <Menuicon size={window.innerWidth > 425 ? 38 : 25} color="#353639" />
       </HammenuIcon>
       <HammenuContent open={openmenu}>
-        <div>
-          <h4>Home</h4>
-        </div>
-        <div>
-          <h4>About</h4>
-        </div>
-        <div>
-          <h4>Projects</h4>
-        </div>
-        <div>
-          <h4>Contact</h4>
-        </div>
+        <ScrollIntoView selector="#home" onClick={() => navigate("/")}>
+          <h3>Home</h3>
+        </ScrollIntoView>
+        <ScrollIntoView selector="#about" onClick={() => navigate("/")}>
+          <h3>About</h3>
+        </ScrollIntoView>
+        <ScrollIntoView selector="#projects" onClick={() => navigate("/")}>
+          <h3>Projects</h3>
+        </ScrollIntoView>
+        <ScrollIntoView selector="#contact" onClick={() => navigate("/")}>
+          <h3>Contact</h3>
+        </ScrollIntoView>
       </HammenuContent>
     </Navwrapper>
   );

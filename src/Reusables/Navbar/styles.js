@@ -105,7 +105,7 @@ export const HammenuContent = styled.div`
     justify-content: center;
     align-items: center;
   }
-  > div h4 {
+  > div h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
     color: #353639;
